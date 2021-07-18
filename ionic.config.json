@@ -1,0 +1,7 @@
+{
+  "name": "OneKiosk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
