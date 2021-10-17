@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'http://localhost:3000',
+  apiUrlSecondary: 'https://one-kiosk-api.herokuapp.com',
+  supabaseUrl: 'https://rfcikdgqqjimixnqrbsi.supabase.co',
+  supabaseKey:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMDEzNzM0MCwiZXhwIjoxOTQ1NzEzMzQwfQ.4V3eRcd10pZzrEUz2wyuLgc59kp_0-SILi0HGBqdrHQ',
 };
 
 /*

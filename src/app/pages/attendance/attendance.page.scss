@@ -1,0 +1,14 @@
+:host {
+  --clr-updated-on: var(--you-n1-200);
+}
+
+:host-context(.dark) {
+  --clr-updated-on: var(--you-n1-700);
+}
+
+.updated-on {
+  text-align: center;
+  font-size: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: var(--clr-updated-on);
+}

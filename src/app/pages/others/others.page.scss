@@ -1,0 +1,42 @@
+:host {
+  --card-height: 7.6rem;
+  --clr-a1: var(--you-a1-500);
+  --clr-a1-lightest: var(--you-a1-100);
+  --clr-a2: var(--you-a3-600);
+  --clr-a2-lightest: var(--you-a3-100);
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-300);
+  --clr-a1-lightest: var(--you-a2-700);
+  --clr-a2: var(--you-a3-200);
+  --clr-a2-lightest: var(--you-a3-600);
+}
+
+.card-container {
+  padding: calc(var(--side-clearence) * 2);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--side-clearence) * 2);
+}
+
+.card {
+  aspect-ratio: 1;
+  color: var(--clr-a1);
+  background-color: var(--clr-a1-lightest);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--app-radius-large);
+  .name {
+    font-size: 1.4rem;
+  }
+}
+
+.card:nth-of-type(4n + 2),
+.card:nth-of-type(4n + 3) {
+  color: var(--clr-a2);
+  background-color: var(--clr-a2-lightest);
+}

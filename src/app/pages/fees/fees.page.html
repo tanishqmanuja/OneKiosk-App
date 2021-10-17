@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fees</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-refresher slot="fixed" pullFactor="0.1" pullMin="200" pullMax="300" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ng-container *ngIf="fees$ | async as fees;else noData">
+    <div class="top">
+
+      <div>
+        <div class="amount">
+          <span>&#8377;</span>
+          {{parseMoney(netPaid(fees),4)}}
+        </div>
+        <div class="label">Paid</div>
+      </div>
+
+      <div>
+        <div class="amount due">
+          <span>&#8377;</span>
+          {{parseMoney(netDues(fees),4)}}
+        </div>
+        <div class="label due">Dues</div>
+      </div>
+    </div>
+
+    <div class="cards-container" @list>
+      <div class="fee-card" *ngFor="let data of fees">
+        <div class="left">
+          <div class="semester">Semester {{parseInt(data.semester)}}</div>
+          <div class="amount">Amount: &#8377; {{data.amount}}</div>
+          <div class="paid">Paid: &#8377; {{data.paid}}</div>
+          <div class="dues">Dues: &#8377; {{data.dues}}</div>
+        </div>
+        <div class="right">
+          <div class="net" [class.due]="parseInt(data.dues)>0">
+            {{parseInt(data.dues)?parseMoney(data.dues,3):parseMoney(data.paid,3)}}</div>
+        </div>
+      </div>
+    </div>
+
+    <ion-item lines="none">
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      <ion-label text-wrap>
+        <h2>Missing Some Data?</h2>
+        <p>Webkiosk is shifting to WebPortal with new APIs so some data might not be available.</p>
+      </ion-label>
+    </ion-item>
+  </ng-container>
+
+  <ng-template #noData>
+    <app-no-data-card (click)="fetchData()" [downloading]="downloading"></app-no-data-card>
+  </ng-template>
+
+
+</ion-content>

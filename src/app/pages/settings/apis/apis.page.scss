@@ -1,0 +1,93 @@
+:host {
+  --clr-bg-toggle-checked: var(--you-a1-400);
+  --clr-bg-handle-checked: var(--you-a1-600);
+  --clr-bg-toggle-unchecked: var(--you-n1-300);
+  --clr-bg-handle-unchecked: var(--you-n1-100);
+  --clr-bg-btn: var(--you-a3-500);
+  --clr-a1: var(--you-a2-600);
+  --clr-bg-btn: var(--you-a3-500);
+  --clr-bg-input: var(--you-n1-50);
+}
+
+:host-context(.dark) {
+  --clr-bg-toggle-checked: var(--you-a1-500);
+  --clr-bg-handle-checked: var(--you-a1-700);
+  --clr-bg-toggle-unchecked: var(--you-n1-500);
+  --clr-bg-handle-unchecked: var(--you-n1-300);
+  --clr-bg-btn: var(--you-a3-600);
+  --clr-a1: var(--you-a2-500);
+  --clr-bg-btn: var(--you-a3-600);
+  --clr-bg-input: rgba(255, 255, 255, 10%);
+}
+
+ion-button {
+  --padding: 1.6rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 3rem;
+  color: var(--you-n1-50);
+  --padding-top: var(--padding);
+  --padding-bottom: var(--padding);
+  --padding-start: var(--padding);
+  --padding-end: var(--padding);
+  --background: var(--clr-bg-btn);
+  --border-radius: var(--app-radius-large);
+}
+
+ion-item {
+  --transition: none;
+  ion-label {
+    font-size: 1.2rem;
+  }
+}
+
+ion-toggle.a12 {
+  --height: 1.65rem;
+  --height-handle: 1.25rem;
+  --width: 3.1rem;
+  --offset: calc(var(--height) / 2 - var(--handle-height) / 2);
+  height: var(--height);
+  width: var(--width);
+  --handle-height: var(--height-handle);
+  --handle-width: var(--height-handle);
+  --border-radius: var(--app-radius-large);
+  --handle-border-radius: 50%;
+  --handle-box-shadow: none;
+  --handle-spacing: var(--offset);
+  --background: var(--clr-bg-toggle-unchecked);
+  --background-checked: var(--clr-bg-toggle-checked);
+  --handle-background: var(--clr-bg-handle-unchecked);
+  --handle-background-checked: var(--clr-bg-handle-checked);
+  &.main {
+    --background: var(--clr-bg-toggle-unchecked)
+      url(/assets/svg/remove_white_24dp.svg) no-repeat right var(--offset)
+      center;
+    --background-checked: var(--clr-bg-toggle-checked)
+      url(/assets/svg/done_white_24dp.svg) no-repeat right
+      calc(var(--offset) * 2 + var(--handle-height) * 1.02) center /
+      calc(var(--height-handle) * 0.8);
+  }
+}
+
+form {
+  ion-item {
+    ion-label {
+      --color: var(--clr-a1);
+      margin-left: var(--app-radius);
+      margin-bottom: 10px;
+    }
+    &.item-has-focus > ion-label {
+      color: var(--clr-a1) !important;
+    }
+    ion-input {
+      --padding: calc(var(--app-radius) * 0.6);
+      --padding-top: var(--padding);
+      --padding-bottom: var(--padding);
+      --padding-start: var(--padding);
+      --padding-end: var(--padding);
+      border-radius: var(--app-radius);
+      --background: var(--clr-bg-input);
+    }
+  }
+}

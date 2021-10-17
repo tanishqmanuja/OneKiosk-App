@@ -1,0 +1,59 @@
+:host {
+  --clr-a1: var(--you-a1-600);
+  --clr-a1-lightest: var(--you-a1-100);
+  --clr-updated-on: var(--you-n1-200);
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-300);
+  --clr-a1-lightest: var(--you-a2-600);
+  --clr-updated-on: var(--you-n1-700);
+}
+
+.point-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--ion-card-background-color);
+  margin-inline: var(--side-clearence);
+  margin-block: 0.5rem 0.9rem;
+  border-radius: var(--app-radius);
+  font-size: clamp(1.2rem, 6vw, 1.5rem);
+  position: relative;
+  overflow: hidden;
+  div {
+    font-weight: bolder;
+    color: var(--clr-a1);
+    z-index: 1;
+    span {
+      font-size: 0.7em;
+    }
+  }
+  .bar {
+    position: absolute;
+    background-color: var(--clr-a1-lightest);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 0%;
+    transition: 400ms ease-out width;
+  }
+}
+
+.updated-on {
+  text-align: center;
+  font-size: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: var(--clr-updated-on);
+  margin-inline: var(--side-clearence);
+  p {
+    margin-block: 3px;
+  }
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

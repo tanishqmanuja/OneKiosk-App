@@ -1,0 +1,80 @@
+:host {
+  --box-size: 5rem;
+  --dot-size: 3rem;
+  --clr-bg-box: var(--ion-card-background-color);
+  --clr-a1: var(--you-a1-600);
+  --clr-a2: var(--you-a2-600);
+  --clr-a3: var(--you-a3-600);
+  --clr-dummy: var(--you-n1-300);
+  --clr-selected: var(--you-a3-700);
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-600);
+  --clr-a2: var(--you-a2-600);
+  --clr-a3: var(--you-a3-600);
+  --clr-dummy: var(--you-n1-700);
+  --clr-selected: var(--you-a3-700);
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--box-size);
+  width: var(--box-size);
+  background-color: var(--clr-bg-box);
+  border-radius: var(--app-radius);
+
+  .primary,
+  .clr:nth-of-type(1) {
+    --size: var(--dot-size);
+    position: relative;
+    z-index: 1;
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--clr-a1);
+    border-radius: var(--size);
+  }
+  .secondary,
+  .clr:nth-of-type(2) {
+    --size: calc(var(--dot-size) / 2);
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: calc(50% - var(--size));
+    height: var(--size);
+    width: calc(var(--size) * 2);
+    background-color: var(--clr-a2);
+    border-radius: 0 0 var(--size) var(--size);
+  }
+  .tertiary,
+  .clr:nth-of-type(3) {
+    --size: calc(var(--dot-size) / 2);
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 50%;
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--clr-a3);
+    border-radius: 0 0 0 var(--size);
+  }
+
+  .dummy {
+    background-color: var(--clr-dummy);
+  }
+
+  .selected {
+    --size: calc(var(--dot-size) * 0.6);
+    position: absolute;
+    z-index: 3;
+    background: var(--clr-selected) url(/assets/svg/done_white_24dp.svg)
+      no-repeat center center / 50% 50%;
+    height: var(--size);
+    width: var(--size);
+    border-radius: var(--size);
+    transition: all 100ms;
+  }
+}

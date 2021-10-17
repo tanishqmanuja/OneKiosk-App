@@ -1,0 +1,92 @@
+:host {
+  --card-height: 8.8rem;
+  --clr-a1: var(--you-a1-500);
+  --clr-a1-light: var(--you-a1-300);
+  --clr-a2-light: var(--you-a3-300);
+  --clr-bg-creds: var(--you-a2-300);
+
+  app-sem-select-bar {
+    --chip-bg-active: var(--clr-a2-light);
+  }
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-400);
+  --clr-a1-light: var(--you-a2-600);
+  --clr-a2-light: var(--you-a3-600);
+  --clr-bg-creds: var(--you-a2-600);
+}
+
+.subject-card {
+  display: flex;
+  margin-inline: var(--side-clearence);
+  margin-block: 0.5rem 1rem;
+  .creds {
+    writing-mode: vertical-lr;
+    border-radius: var(--app-radius-large);
+    color: var(--ion-background-color);
+    background-color: var(--clr-a2-light);
+    margin-left: 0.3rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    &.elective {
+      background-color: var(--clr-bg-creds);
+    }
+  }
+  .main {
+    width: 100%;
+    background-color: var(--ion-card-background-color);
+    border-radius: var(--app-radius);
+    padding: calc(var(--app-radius) * 0.8);
+    display: flex;
+    flex-direction: column;
+    .name-type {
+      font-size: var(--fs-600);
+      span {
+        margin-top: calc(var(--app-radius) * -0.3);
+        margin-right: calc(var(--app-radius) * -0.3);
+        float: right;
+        vertical-align: middle;
+        font-size: 0.6rem;
+        font-weight: bold;
+        padding: 0.5rem 0.8rem;
+        border-radius: var(--app-radius);
+        background-color: var(--clr-a2-light);
+        &.elective {
+          background-color: var(--clr-bg-creds);
+        }
+      }
+    }
+    .fullname-code {
+      font-size: clamp(0.6rem, 3.3vw, 0.9rem);
+      font-size: calc(var(--fs-500) * 0.9);
+      padding-block: 4px 0.5rem;
+    }
+    .faculty-wrapper {
+      .label {
+        font-size: calc(var(--fs-500) * 1.1);
+        padding-bottom: 3px;
+      }
+      .lec,
+      .tut,
+      .prac {
+        display: flex;
+        align-items: center;
+        font-size: calc(var(--fs-500) * 0.9);
+        .decor {
+          height: 0.7rem;
+          width: 0.7rem;
+          margin-right: calc(var(--app-radius) * 0.6);
+          border-radius: 50%;
+          background-color: var(--clr-bg-creds);
+        }
+        span {
+          margin-left: calc(var(--app-radius) * 0.4);
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<ion-content>
+
+  <div class="header">
+    <ion-icon src="assets/svg/arrow.svg"></ion-icon>
+    <div class="title">
+      Choose a suitable timetable file.
+    </div>
+  </div>
+  <ion-list lines="none">
+    <ion-item *ngFor="let file of timetableList | async" (click)="applyTimetable(file.name)">
+      <ion-icon slot="start" name="document-text"></ion-icon>
+      <ion-label>{{file.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <div class="footer">
+    <ion-button class="col text-center" (click)="close()" expand="block">
+      Close
+    </ion-button>
+  </div>
+</ion-content>

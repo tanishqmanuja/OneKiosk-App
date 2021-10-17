@@ -1,0 +1,52 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="settings"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Theming</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-item lines="none">
+    <ion-label>Dark theme</ion-label>
+    <ion-toggle (ionChange)="changeTheme($event)" [(ngModel)]="themeModeIsDark" class="a12 main" slot="end">
+    </ion-toggle>
+  </ion-item> -->
+
+  <ion-item lines="none">
+    <ion-label>
+      <h2>Modes</h2>
+      <p>Current selected mode is {{themeMode==='DEFAULT'?'following system':themeMode | lowercase}}</p>
+    </ion-label>
+  </ion-item>
+
+  <div class="boxes-container mode">
+    <app-color-box [colors]="['var(--you-n1-900)','var(--you-n1-100)']" (click)="changeMode('DEFAULT')"
+      [selected]="themeMode === 'DEFAULT'"></app-color-box>
+    <app-color-box [colors]="['var(--you-n1-900)']" (click)="changeMode('DARK')" [selected]="themeMode === 'DARK'">
+    </app-color-box>
+    <app-color-box [colors]="['var(--you-n1-100)']" (click)="changeMode('LIGHT')" [selected]="themeMode === 'LIGHT'">
+    </app-color-box>
+  </div>
+
+  <ion-item lines="none">
+    <ion-label>
+      <h2>Accents</h2>
+      <p>Current selected mode is {{assortedColors[selectedAccentIndex].name}}</p>
+    </ion-label>
+  </ion-item>
+
+  <div class="boxes-container">
+    <app-color-box *ngFor="let c of assortedColors;index as i" [color]="c.color" [selected]="selectedAccentIndex === i"
+      (click)="changeAccent(i)">
+    </app-color-box>
+  </div>
+
+
+  <ion-button *ngIf="isNeedToApply" (click)="applyAccent()" fill="clear" @pop>
+    Apply
+  </ion-button>
+
+</ion-content>

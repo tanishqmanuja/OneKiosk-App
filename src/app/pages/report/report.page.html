@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-title>Report</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <app-sem-select-bar [list]="list$ | async" (semChange)="changeSem($event)" [syncing]="syncing"></app-sem-select-bar>
+
+    <ion-refresher slot="fixed" pullFactor="0.1" pullMin="200" pullMax="300" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <ng-container *ngIf="(points$ | async) as p">
+        <div class="point-card">
+            <div class="bar" [@bar]="p" [style.width.%]="percentage(p.sgpa,10)"></div>
+            <div class="sg">{{p.sgpa}}<span> SG</span></div>
+            <div class="sg">{{p.credits | number}}<span> Creds</span></div>
+            <div class="cg">{{p.cgpa}}<span> CG</span></div>
+        </div>
+    </ng-container>
+
+    <div *ngIf="(reports$ | async) as data;else noData" [@list]="data">
+        <app-report-card *ngFor="let r of data" [data]="r"></app-report-card>
+    </div>
+
+    <div class="updated-on" *ngIf="marksUpdatedOn || gradesUpdatedOn || pointsUpdatedOn">
+        <p>Updated on</p>
+        <div class="div">
+            <div *ngIf="marksUpdatedOn as u">M: {{ u | date:'short' }}</div>
+            <div *ngIf="gradesUpdatedOn as u">G: {{ u | date:'short' }}</div>
+            <div *ngIf="pointsUpdatedOn as u">P: {{ u | date:'short' }}</div>
+        </div>
+
+    </div>
+
+    <ng-template #noData>
+        <app-no-data-card (click)="fetchSemData()" [downloading]="downloading"></app-no-data-card>
+    </ng-template>
+
+</ion-content>

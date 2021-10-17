@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div class="pill">
+    <div class="item" *ngFor="let it of options;index as i" (click)="changeSelected(i)" [class.selected]="i===selected">
+      {{it}}
+    </div>
+    <div class="selector" [style.width.%]="100/options.length" [style.left.%]="100*selected/options.length">
+      {{options[selected]}}</div>
+  </div>
+</div>

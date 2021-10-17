@@ -1,0 +1,142 @@
+:host {
+  --card-height: clamp(6.5rem, 28vw, 7.7rem);
+  --clr-a1: var(--you-a1-500);
+  --clr-a1-light: var(--you-a1-200);
+  --clr-a1-lightest: var(--you-a1-100);
+  --clr-a2: var(--you-a3-600);
+  --clr-a2-lightest: var(--you-a3-200);
+  --clr-sec-text: var(--you-n1-600);
+
+  display: block;
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-600);
+  --clr-a1-light: var(--you-a1-400);
+  --clr-a1-lightest: var(--you-a1-300);
+  --clr-a2: var(--you-a3-600);
+  --clr-a2-lightest: var(--you-a3-300);
+  --clr-sec-text: var(--you-n1-300);
+}
+
+.card-wrapper {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  //height: var(--card-height);
+  //isolation: isolate;
+}
+
+.options {
+  position: relative;
+  left: 0;
+  z-index: 0;
+  height: var(--card-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-block: 1rem;
+  margin-inline-start: var(--side-clearence);
+  gap: calc(var(--side-clearence) * 0.9);
+  transform: scale(0.85);
+  .square {
+    height: calc(var(--card-height) / 2);
+    min-width: calc(var(--card-height) / 2);
+    color: var(--clr-a1);
+    background-color: var(--clr-a1-lightest);
+    border-radius: calc(var(--app-radius) * 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-700);
+
+    &.delete {
+      background-color: var(--clr-a2-lightest);
+      color: var(--clr-a2);
+    }
+
+    ion-icon {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.card {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: var(--card-height);
+  width: calc(100vw - 2 * var(--side-clearence));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1rem;
+  margin-inline: var(--side-clearence);
+  gap: calc(var(--side-clearence) * 0.9);
+  .time {
+    height: var(--card-height);
+    min-width: var(--card-height);
+    background-color: var(--clr-a1-lightest);
+    border-radius: var(--app-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-a1);
+    font-size: var(--fs-700);
+
+    ion-icon {
+      font-size: 2rem;
+    }
+  }
+  .main {
+    position: relative;
+    width: 100%;
+    height: var(--card-height);
+    border-radius: var(--app-radius-large);
+    background-color: var(--ion-card-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: calc(var(--app-radius-large) * 0.8);
+    .name {
+      font-size: var(--fs-600);
+    }
+    .details {
+      font-size: var(--fs-510);
+      color: var(--clr-sec-text);
+    }
+  }
+  .duration {
+    position: absolute;
+    top: calc(var(--app-radius-large) * 0.3);
+    right: calc(var(--app-radius-large) * 0.3);
+    width: 4ch;
+    height: 4ch;
+    border-radius: 50%;
+    background-color: var(--clr-a1-lightest);
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: clamp(0.6rem, 3.3vw, 0.8rem);
+    color: var(--clr-a1);
+    font-weight: bolder;
+    &.long {
+      background-color: var(--clr-a2-lightest);
+      color: var(--clr-a2);
+    }
+  }
+  .edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ion-icon {
+      font-size: 1rem;
+    }
+  }
+  .remove {
+    right: calc(var(--app-radius-large) * 0.5 + 4ch);
+  }
+}

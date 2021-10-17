@@ -1,0 +1,1367 @@
+[
+    {
+        "department": "BIOTECH",
+        "code": "ASM",
+        "name": "Dr.Ashwani Mathur",
+        "url": "http://www.jiit.ac.in/dr-ashwani-mathur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Ashwani%20Mathur.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "CKJ",
+        "name": "Dr. Chakresh Jain",
+        "url": "http://www.jiit.ac.in/dr-chakresh-kumar-jain",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Chakresh%20Jain.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "EKT",
+        "name": "Ms. Ekta Bhatt",
+        "url": "http://www.jiit.ac.in/ms-ekta-bhatt",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/ekta.jpg",
+        "position": "Associate Lecturer"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "GMA",
+        "name": "Dr. Garima Mathur",
+        "url": "http://www.jiit.ac.in/dr-garima-mathur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Garima%20Mathur.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "IS",
+        "name": "Dr. Indira Sarethy",
+        "url": "http://www.jiit.ac.in/prof-indira-p-sarethy",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Indira%20P.%20Sarethy.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "KS",
+        "name": "Dr. Krishna Sundari",
+        "url": "http://www.jiit.ac.in/prof-s-krishna-sundari",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Krishna%20Sundari.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "MAS",
+        "name": "Ms. Manisha Singh",
+        "url": "http://www.jiit.ac.in/dr-manisha-singh",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Manisha%20Singh.JPG",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "NW",
+        "name": "Dr. Neeraj Wadhwa",
+        "url": "http://www.jiit.ac.in/prof-neeraj-wadhwa",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Neeraj%20Wadhwa.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "PDS",
+        "name": "Dr. Priyadarshini",
+        "url": "http://www.jiit.ac.in/dr-priyadarshini",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Priyadarshini.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "PMG",
+        "name": "Dr. Pammi Gauba",
+        "url": "http://www.jiit.ac.in/prof-pammi-gauba",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Pammi%20Gauba.JPG",
+        "position": "Head, Dept. of Biotechnology"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "RAC",
+        "name": "Dr. Rachana",
+        "url": "http://www.jiit.ac.in/dr-rachana",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Rachana.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "RG",
+        "name": "Dr. Reema Gabrani",
+        "url": "http://www.jiit.ac.in/prof-reema-gabrani",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/ReemaGabrani.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SBA",
+        "name": "Dr. Susinjan Bhatacharya",
+        "url": "http://www.jiit.ac.in/dr-susinjan-bhattacharya",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Susinjan%20Bhattacharya.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SCH",
+        "name": "Dr. Sonam Chawla",
+        "url": "http://www.jiit.ac.in/dr-sonam-chawla",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/SonamChawla.png",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SHD",
+        "name": "Dr. Shweta Dang",
+        "url": "http://www.jiit.ac.in/dr-shweta-dang",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Sweta%20Dang.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SHM",
+        "name": "Dr. Shalini Mani",
+        "url": "http://www.jiit.ac.in/dr-shalini-mani",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Shalini%20Mani.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SMG",
+        "name": "Dr. Smriti Gaur",
+        "url": "http://www.jiit.ac.in/dr-smriti-gaur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Smriti%20Gaur.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SMO",
+        "name": "Dr. Sujata Mohanty",
+        "url": "http://www.jiit.ac.in/prof-sujata-mohanty",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Sujata%20Mohanty.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SSR",
+        "name": "Dr Sudha Srivastava",
+        "url": "http://www.jiit.ac.in/prof-sudha-srivastava",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Sudha%20Srivastava.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "SZ",
+        "name": "Dr. Shazia",
+        "url": "http://www.jiit.ac.in/dr-shazia-haider",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/SaziaH.png",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "VBR",
+        "name": "Dr. Vibha Rani",
+        "url": "http://www.jiit.ac.in/prof-vibha-rani",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Vibha%20Rani.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "BIOTECH",
+        "code": "VGU",
+        "name": "Dr Vibha Gupta",
+        "url": "http://www.jiit.ac.in/dr-vibha-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/BT%20Vibha%20Gupta.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "ALC",
+        "name": "Dr. Alok Chauhan",
+        "url": "http://www.jiit.ac.in/dr-p-s-chauhan",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/chauan.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "AP",
+        "name": "Prof. Anirban Pathak",
+        "url": "http://www.jiit.ac.in/prof-anirban-pathak",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20Anirban.jpg",
+        "position": "Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "ANU",
+        "name": "Dr. Anuraj Panwar",
+        "url": "http://www.jiit.ac.in/dr-anuraj-panwar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/AnurajPanwar.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "BCJ",
+        "name": "Dr. Bhubesh Chander Joshi",
+        "url": "http://www.jiit.ac.in/dr-b-c-joshi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20Bhubesh%20Chander%20Joshi.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "DIN",
+        "name": "Dr. Dinesh Tripathi",
+        "url": "http://www.jiit.ac.in/dr-dinesh-tripathi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/DineshTripathi.jpg",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "DKR",
+        "name": "Prof. D.K.Rai",
+        "url": "http://www.jiit.ac.in/prof-dk-rai-0",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/dkrai.jpg",
+        "position": "Professor & Dean (A&R)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "HP",
+        "name": "Dr. Himanshu Pandey",
+        "url": "http://www.jiit.ac.in/dr-himanshu-pandey",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HIMANSHU.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "MKC",
+        "name": "Dr.Manoj Kumar",
+        "url": "http://www.jiit.ac.in/dr-manoj-kumar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20Manoj%20Kumar.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "MTI",
+        "name": "Dr. Manoj Tripathi",
+        "url": "http://www.jiit.ac.in/dr-manoj-tripathi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/DrManojTripathi.png",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "NG",
+        "name": "Dr. Navendu Goswami",
+        "url": "http://www.jiit.ac.in/dr-navendu-goswami",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20Navendu%20Goswami.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "NKS",
+        "name": "Dr. Navneet K. Sharma",
+        "url": "http://www.jiit.ac.in/sites/all/themes/ibees/images/pdf/fdp_brochure_pmse.pdf",
+        "position": ""
+    },
+    {
+        "department": "PHYSICS",
+        "code": "PC",
+        "name": "Dr. Papia Chowdhury",
+        "url": "http://www.jiit.ac.in/dr-papia-chowdhury",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20Papia.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "RKD",
+        "name": "Prof. Rakesh Kumar Dwivedi ",
+        "url": "http://www.jiit.ac.in/prof-r-k-dwivedi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20RK%20Dwivedi.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "SPP",
+        "name": "Prof. S.P. Purohit",
+        "url": "http://www.jiit.ac.in/prof-s-p-purohit",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20SP%20Purohit.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "VSL",
+        "name": "Dr.Vivek Sajal",
+        "url": "http://www.jiit.ac.in/dr-vivek-sajal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PH%20Vivek%20Sajal.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "PHYSICS",
+        "code": "ABH",
+        "name": "Dr. Ashish Batnagar",
+        "url": "http://www.jiit.ac.in/dr-ashish-bhatnagar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Dr%2C%20Ashish%20Bhatnagar.jpg",
+        "position": "Assistant Professor"
+    },
+    {
+        "department": "HSS",
+        "code": "AAR",
+        "name": "Dr. Akarsh Arora",
+        "url": "http://www.jiit.ac.in/dr-akarsh-arora",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Akarsh.jpg",
+        "position": "Assistant Professor(Grade-I)"
+    },
+    {
+        "department": "HSS",
+        "code": "AMN",
+        "name": "Dr. Amandeep",
+        "url": "http://www.jiit.ac.in/dr-amandeep-kaur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Amandeep%20Kaur.png",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "HSS",
+        "code": "AS",
+        "name": "Dr. Alka Sarma",
+        "url": "http://www.jiit.ac.in/prof-alka-sharma",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HSS%20Alka%20Sharma.JPG",
+        "position": "Dean (Humanities)\n"
+    },
+    {
+        "department": "HSS",
+        "code": "BB",
+        "name": "Dr. Badri Bajaj",
+        "url": "http://www.jiit.ac.in/dr-badri-bajaj",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HS%20Badri%20Bajaj.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "HSS",
+        "code": "CHC",
+        "name": "Dr. Chandrima Chaudhary",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "HSS",
+        "code": "KMB",
+        "name": "Dr. Kanupriya Misra Bakhru",
+        "url": "http://www.jiit.ac.in/dr-kanupriya-misra-bakhru",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HS%20Kanupriya%20Misra%20Bakhru.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "HSS",
+        "code": "MM",
+        "name": "Dr. Mukta Mani",
+        "url": "http://www.jiit.ac.in/dr-mukta-mani",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HS%20Mukta%20Mani.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "HSS",
+        "code": "MRB",
+        "name": " Mr. Manas Ranjan Behera",
+        "url": "http://www.jiit.ac.in/manas-ranjan-behera",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HS%20Manas%20Ranjan%20Behera.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "HSS",
+        "code": "PP",
+        "name": "Ms. Puneet Pannu",
+        "url": "http://erp.jiit.ac.in/student-facilities",
+        "position": ""
+    },
+    {
+        "department": "HSS",
+        "code": "SA",
+        "name": "Dr. Shirin Alavi",
+        "url": "http://www.jiit.ac.in/dr-shirin-alavi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HS%20Shirin%20Alavi.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "HSS",
+        "code": "SAN",
+        "name": "Dr. Santoshi Sen Gupta",
+        "url": "http://www.jiit.ac.in/dr-santoshi-sengupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/santos2.jpg",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "HSS",
+        "code": "SD",
+        "name": "Dr. Santosh Dev",
+        "url": "http://www.jiit.ac.in/dr-santosh-dev",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/HS%20Santosh%20Dev.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "HSS",
+        "code": "SWA",
+        "name": "Dr. Swati Sharma",
+        "url": "http://www.jiit.ac.in/dr-swati-sharma",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/swati.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "HSS",
+        "code": "MB",
+        "name": "Dr. Monali Bhattacharya",
+        "url": "http://www.jiit.ac.in/dr-monali-bhattacharya",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/monali.jpg",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "AA",
+        "name": "Dr. Anuja Arora",
+        "url": "http://www.jiit.ac.in/dr-anuja-arora",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Anuja%20Arora.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ADI",
+        "name": "Dr. Adwitiya Sinha",
+        "url": "http://www.jiit.ac.in/dr-adwitiya-sinha",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/ADI-1.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ADS",
+        "name": "Mrs. Aditi Sharma",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "AJP",
+        "name": "Dr. Amarjeet Prajapati",
+        "url": "http://www.jiit.ac.in/amarjeet-prajapati",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/amarjeetprajapati_0.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ALK",
+        "name": "Dr Alka Singhal",
+        "url": "http://www.jiit.ac.in/dr-alka-singhal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/AlkaSinghal.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "AM",
+        "name": "Dr Ashish Mishra",
+        "url": "http://www.jiit.ac.in/dr-ashish-mishra",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/AshishMishra.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "AMK",
+        "name": "Ms. Amarjeet Kaur",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList_Feb20.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ANV",
+        "name": "Dr. Ankit Vidyarthi",
+        "url": "http://www.jiit.ac.in/dr-ankit-vidyarthi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/AnkitVidyarthi.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "APJ",
+        "name": "Mrs. Arpita Jadav",
+        "url": "http://www.jiit.ac.in/sites/default/files/Big%20data%20Workshop%20Brochure.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "APR",
+        "name": "Mrs. Amanpreet Kaur",
+        "url": "http://www.jiit.ac.in/amanpreet-kaur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Amanpreet%20Kaur.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ARP",
+        "name": "Dr. Archana Purwar",
+        "url": "http://www.jiit.ac.in/dr-archana-purwar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Archana%20Purwar.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ASA",
+        "name": "Dr. Anita Sahoo",
+        "url": "http://www.jiit.ac.in/dr-anita-sahoo",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/ANITA.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "ATN",
+        "name": "Dr. Aparajita Nanda",
+        "url": "http://www.jiit.ac.in/dr-aparajita-nanda",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/nanda.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "AV",
+        "name": "Dr. Ankita Verma",
+        "url": "http://www.jiit.ac.in/dr-ankita-verma",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/ankita.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "AW",
+        "name": "Mrs Ankita Wadhwa",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "BG",
+        "name": "Dr. Bharat Gupta",
+        "url": "http://www.jiit.ac.in/bharat-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Bharat%20Gupta.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "CD",
+        "name": "Dr. Chetna Dabas",
+        "url": "http://www.jiit.ac.in/dr-chetna-dabas",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Chetna%20Dabas.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "DL",
+        "name": "Dr. Dhanalakshmi",
+        "url": "http://www.jiit.ac.in/computer-science-and-it-faculty",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "DSI ",
+        "name": "Mrs. Dipti Singh"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "DSR",
+        "name": "Dr. Dharamveer Singh Rajput",
+        "url": "http://www.jiit.ac.in/dr-dharmveer-singh-rajpoot",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Dharmveer%20Singh%20Rajpoot.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "GDP",
+        "name": "Dr. Gagandeep Kaur",
+        "url": "http://www.jiit.ac.in/dr-gagandeep-kaur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Gagandeep%20Kaur.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "HN",
+        "name": "Dr. Hema N",
+        "url": "http://www.jiit.ac.in/dr-hema-n",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Hema.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "IC",
+        "name": "Dr. Indu Chawla",
+        "url": "http://www.jiit.ac.in/dr-indu-chawla",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Indu%20Chawla.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "KA",
+        "name": "Mrs. Kirti Agarwal",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "KP",
+        "name": "Dr. Kavita Pandey",
+        "url": "http://www.jiit.ac.in/kavita-pandey",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Kavita%20Pandey.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "KRL",
+        "name": "Dr.  K. Rajalakshmi",
+        "url": "http://www.jiit.ac.in/dr-k-rajalakshmi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/K.Rajlakshmi.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "KSA",
+        "name": "Mr. Kashav Ajmera ",
+        "url": "http://www.jiit.ac.in/sites/default/files/SemIV-INTGT-CSE.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "KVK",
+        "name": "Dr. K Vimal Kumar",
+        "url": "http://www.jiit.ac.in/dr-k-vimal-kumar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20K%20Vimal%20Kumar.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "MAJ",
+        "name": "Dr. Manju",
+        "url": "http://www.jiit.ac.in/dr-manju",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MANJU.jpg",
+        "position": "Assistant Professor (Sr. Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "MG",
+        "name": "Mr. Mahendra Gurve",
+        "url": "http://www.jiit.ac.in/technical-staff",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "MGR",
+        "name": "Dr. Megha Rathi",
+        "url": "http://www.jiit.ac.in/dr-megha-rathi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Megha%20Rathi.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "MKT",
+        "name": "Dr. Manish Kumar Thakur",
+        "url": "http://www.jiit.ac.in/dr-manish-kumar-thakur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/default_images/images_1.jpg",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "MOK",
+        "name": "Dr Mohit Kumar",
+        "url": "http://www.jiit.ac.in/dr-mohit-kumar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MohitKumar.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "MSH",
+        "name": "Mrs. Mradula Sharma",
+        "url": "http://www.jiit.ac.in/ms-mradula-sharma",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/mradulasharma.jpg",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "NCH",
+        "name": "Dr. Nisha Chaurasia",
+        "url": "http://www.jiit.ac.in/computer-science-and-it-faculty",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "NIY",
+        "name": "Dr. Niyati Agarwal",
+        "url": "http://www.jiit.ac.in/dr-niyati-aggrawal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/niyati%20agarwal.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "NSA",
+        "name": "Dr. Neetu Sardana",
+        "url": "http://www.jiit.ac.in/dr-neetu-sardana",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Neetu%20Sardana.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "NBA",
+        "name": "Neha Bansal",
+        "url": "http://www.jiit.ac.in/neha-bansal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/default_images/images_1.jpg",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PAG",
+        "name": "Dr. Parul Agarwal",
+        "url": "http://www.jiit.ac.in/dr-parul-agarwal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Parul%20Agarwal.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PSM",
+        "name": "Dr Pawan Mehra",
+        "url": "http://www.jiit.ac.in/dr-pawan-singh-mehra",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/PawanKrMehra.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PAR",
+        "name": "Dr.  Parmeet Kaur",
+        "url": "http://www.jiit.ac.in/dr-parmeet-kaur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Parmeet%20Kaur.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PK",
+        "name": "Dr.  Prakash Kumar",
+        "url": "http://www.jiit.ac.in/dr-prakash-kumar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Prakash%20Kumar.JPG",
+        "position": "Associate Professor & Associate Dean of Students "
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PKAU",
+        "name": "Mr Prashant Kaushik",
+        "url": "http://www.jiit.ac.in/jced",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PRK",
+        "name": "Purti Kohli",
+        "url": "http://www.jiit.ac.in/purtee-jethi-kohli",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Purtee%20Kohli.JPG",
+        "position": "Assistant Professor (Grade-I) "
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PRN",
+        "name": "Mr. Prantik Biswas",
+        "url": "http://www.jiit.ac.in/sites/default/files/SemVI-BT-IT.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PRV",
+        "name": "Dr. Raghu Vamsi",
+        "url": "http://www.jiit.ac.in/dr-p-raghu-vamsi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20P.Raghu%20Vansi.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "PU",
+        "name": "Mr. Pawan Upadhyay",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SAA",
+        "name": "Mrs. Sakshi Agarwal",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SAG",
+        "name": "Dr. Sangeeta Lal",
+        "url": "http://www.jiit.ac.in/dr-neetu-sardana",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Neetu%20Sardana.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SC",
+        "name": "Dr. Satish Chandra",
+        "url": "http://www.jiit.ac.in/dr-satish-chandra",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/SatishChandra.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SHB",
+        "name": "Mrs. Shilpa  Budhkar",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SHG",
+        "name": "Mrs. Sherry Garg",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SHJ",
+        "name": "Dr. Shikha Jain",
+        "url": "http://www.jiit.ac.in/dr-shikha-jain",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Shikha%20Jain.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SHP",
+        "name": "Mrs. Shraddha Porwal",
+        "url": "http://www.jiit.ac.in/shardha-porwal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Shardha%20Porwal.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SJA",
+        "name": "Mrs Somya Jain",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SKS",
+        "name": "Dr. Sandeep K. Singh",
+        "url": "http://www.jiit.ac.in/dr-sandeep-kumar-singh",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Sandeep%20Kumar%20Singh.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SMT ",
+        "name": "Dr. Sangeeta Mittal",
+        "url": "http://www.jiit.ac.in/dr-sangeeta-mittal-0",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/sangeeta%20mittal.png",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SON",
+        "name": "Ms. Sonal",
+        "url": "http://www.jiit.ac.in/sonal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/sonal.jpg",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SRG",
+        "name": "Ms. Sarishty Gupta",
+        "url": "http://www.jiit.ac.in/ms-sarishty-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Sarishty_img.jpg",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "SUD",
+        "name": "Dr. Suma Dawn",
+        "url": "http://www.jiit.ac.in/dr-suma-dawn",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Suma%20Dawn.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "TAJ",
+        "name": "Dr. Taj Alam",
+        "url": "http://www.jiit.ac.in/dr-taj-alam",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Taj%20Alam.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "TKT",
+        "name": "Dr.  Tribhuwan K. Tewari",
+        "url": "http://www.jiit.ac.in/dr-tribhuwan-kumar-tewari",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Tribhuwan%20Tiwari.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "VH",
+        "name": "Mr. Vikas Hassija",
+        "url": "http://www.jiit.ac.in/mr-vikas-hassija",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/VikasHassija.png",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "CSE & IT",
+        "code": "VIV",
+        "name": "Mr. Vivek Kumar Singh",
+        "url": "http://www.jiit.ac.in/mr-vivek-kumar-singh",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/vivek.jpg",
+        "position": "Assistant Professor (Grade-II) "
+    },
+    {
+        "department": "CSE & IT",
+        "code": "VS",
+        "name": "Prof. Vikas Saxena",
+        "url": "http://www.jiit.ac.in/prof-vikas-saxena-0",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/CS%20Vikas%20Saxena.JPG",
+        "position": "Professor & Head ( CSE & IT)"
+    },
+    {
+        "department": "ECE",
+        "code": "AB",
+        "name": "Mr Ankur Bhardwaj",
+        "url": "http://www.jiit.ac.in/ankur-bhardwaj",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Ankur%20Bhardwaj.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "ABG",
+        "name": "Dr. Abhinav Gupta",
+        "url": "http://www.jiit.ac.in/dr-abhinav-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Abhinav%20Gupta.JPG",
+        "position": "Associate Professor "
+    },
+    {
+        "department": "ECE",
+        "code": "AGO",
+        "name": "Dr. Ashish Goel",
+        "url": "http://www.jiit.ac.in/dr-ashish-goel",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Ashish%20Goel.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "AKG",
+        "name": "Amit Kumar Goyal",
+        "url": "http://www.jiit.ac.in/dr-amit-kumar-goyal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/AmitKumarGoyal.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "AKS",
+        "name": "Mr. Atul K. Srivastava",
+        "url": "http://www.jiit.ac.in/atul-kumar-srivastava",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Atul%20Kumar%20Srivastava.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "APN",
+        "name": "Dr. Archana Pandey",
+        "url": "http://www.jiit.ac.in/dr-archana-pandey",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Archana%20Pandey.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "BHG",
+        "name": "Ms Bhawna Gupta",
+        "url": "http://www.jiit.ac.in/sites/default/files/SemIV-MT-ECEMET.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "DJH",
+        "name": "Dr. D. K.  Jharia",
+        "url": "http://www.jiit.ac.in/sites/default/files/SSTT2018_0.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "GK",
+        "name": "Dr. Garima Kapoor",
+        "url": "http://www.jiit.ac.in/dr-garima-kapur",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/garimakapoor.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "GV",
+        "name": "Dr. Gaurav Verma",
+        "url": "http://www.jiit.ac.in/dr-gaurav-verma",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Gaurav%20Verma.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "JAS",
+        "name": "Dr. Jasmine Saini",
+        "url": "http://www.jiit.ac.in/dr-jasmine-saini",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Jasmine%20Saini.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "JG",
+        "name": "Dr. Juhi Gupta",
+        "url": "http://www.jiit.ac.in/dr-juhi-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Juhi.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "KIR",
+        "name": "Dr. Kirminder Singh",
+        "url": "http://www.jiit.ac.in/dr-kirmender-singh",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Kirmender%20Singh.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "MJ",
+        "name": "Dr. Madhu Jain",
+        "url": "http://www.jiit.ac.in/dr-madhu-jain",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Madhu%20Jain.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "MN",
+        "name": "Mandeep Narula",
+        "url": "http://www.jiit.ac.in/mandeep-narula-0",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Mandeep%20Narula_0.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "MO",
+        "name": "Ms Monika",
+        "url": "http://www.jiit.ac.in/monika",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Monika.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "NES",
+        "name": "Dr. Neetu Singh",
+        "url": "http://www.jiit.ac.in/dr-neetu-singh",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Neetu%20Singh.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "PKY",
+        "name": "Dr. P.K. Yadav",
+        "url": "http://www.jiit.ac.in/dr-pankaj-kumar-yadav",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Pankaj%20Kr%20Yadav.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "RB",
+        "name": "Dr. Reema Buddhiraja",
+        "url": "http://www.jiit.ac.in/dr-reema-buddhiraja",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Reema%20Budhiraja.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "RIG",
+        "name": "Dr. Richa Gupta",
+        "url": "http://www.jiit.ac.in/dr-richa-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Richa%20Gupta.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "RK",
+        "name": "Dr. Rahul Kaushik",
+        "url": "http://www.jiit.ac.in/dr-rahul-kaushik",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Rahul%20Kaushik.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "RS",
+        "name": "Mr Ritesh Sharma",
+        "url": "http://www.jiit.ac.in/sites/default/files/SSTT2018_0.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "RU",
+        "name": "Ms Ruby ",
+        "url": "http://www.jiit.ac.in/jiit/ICSC/Session%20Plan%20of%20ICSC2020.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "SB",
+        "name": "Ms. Smriti Bhatanagar",
+        "url": "http://www.jiit.ac.in/smriti-bhatnagar",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Smriti%20Bhatnagar.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "SHA",
+        "name": "Dr. Shamim Akhtar",
+        "url": "http://www.jiit.ac.in/dr-shamim-akhter",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Shamim%20Akhter.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "SHS",
+        "name": "Ms. Shradha Saxena",
+        "url": "http://www.jiit.ac.in/jiit/ICSC/Session%20Plan%20of%20ICSC2020.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "SKA ",
+        "name": "Dr. Shruti Kalra",
+        "url": "http://www.jiit.ac.in/dr-shruti-kalra",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Shruti%20Sabharwal.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "STY",
+        "name": "Mr Shivaji Tyagi",
+        "url": "http://www.jiit.ac.in/shivaji-tyagi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Shivaji%20Tyagi.JPG",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "VD",
+        "name": "Dr. Vivek Dwivedi",
+        "url": "http://www.jiit.ac.in/dr-vivek-dwivedi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Vivek%20Dwivedi.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "VIK",
+        "name": "Dr. Vikram Karwal",
+        "url": "http://www.jiit.ac.in/dr-vikram-karwal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Vikram%20Karwal.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "VK",
+        "name": "Dr.. Vineet Khandelwal",
+        "url": "http://www.jiit.ac.in/dr-vineet-khandelwal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Vineet%20Khandelwal.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "VKH",
+        "name": "Dr. Vijay Khare",
+        "url": "http://www.jiit.ac.in/dr-vijay-khare",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Vijay%20Khare.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "VNS",
+        "name": "Vishal Narain Saxena",
+        "url": "http://www.jiit.ac.in/vishal-narain-saxena",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/vishal-ece.jpg",
+        "position": "Assistant Professor (Grade-II)"
+    },
+    {
+        "department": "ECE",
+        "code": "NEJ",
+        "name": "Dr. Neetu Joshi",
+        "url": "http://www.jiit.ac.in/dr-neetu-joshi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/NeetuJoshi.png",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "AJK",
+        "name": "Mr. Ajay Kumar",
+        "url": "http://www.jiit.ac.in/jiit/ICSC/Session%20Plan%20of%20ICSC2020.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "SCH",
+        "name": "Dr. Saurabh Chaturvedi",
+        "url": "http://www.jiit.ac.in/dr-saurabh-chaturvedi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/saurabh.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "CDN",
+        "name": "Mr. Chandan Kumar",
+        "url": "http://www.jiit.ac.in/technical-staff",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "VLS",
+        "name": "Mr. Vimal Saini",
+        "url": "http://www.jiit.ac.in/electronics-and-communication-faculty?page=3",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "MJY",
+        "name": "Ms. Madhu Jharia"
+    },
+    {
+        "department": "ECE",
+        "code": "AGA",
+        "name": "Dr. Ankit Garg",
+        "url": "http://www.jiit.ac.in/dr-ankit-garg",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/ankitgarg.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "RHA",
+        "name": "Dr. Rachna Singh",
+        "url": "http://www.jiit.ac.in/dr-rachna-singh",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Dr%20Rachna%20Singh.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "ECE",
+        "code": "NKR",
+        "name": "Mr. Nitesh Kumar",
+        "url": "http://www.jiit.ac.in/electronics-and-communication-faculty?page=3",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "NTI",
+        "name": "Dr.Neeti",
+        "url": "http://www.jiit.ac.in/dr-vijay-khare",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/EC%20Vijay%20Khare.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "ECE",
+        "code": "NSH",
+        "name": "Ms. Nisha",
+        "url": "http://www.jiit.ac.in/sites/default/files/FacultyList.pdf",
+        "position": ""
+    },
+    {
+        "department": "ECE",
+        "code": "AKB",
+        "name": "Dr.Akansha Bansal",
+        "url": "http://www.jiit.ac.in/dr-akansha-bansal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Akansha_pic.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "MATHS",
+        "code": "AKA",
+        "name": "Prof. A. K. Aggarwal",
+        "url": "http://www.jiit.ac.in/prof-amrish-kumar-aggarwal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20Amrish%20Agarwal.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "MATHS",
+        "code": "AN",
+        "name": "Dr. Anuj Bhardwaj",
+        "url": "http://www.jiit.ac.in/dr-anuj-bhardwaj",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20Anuj%20Bhardwaj.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "MATHS",
+        "code": "AT",
+        "name": "Prof. Alka Tripathi",
+        "url": "http://www.jiit.ac.in/prof-alka-tripathi",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20Alka%20Tripathi.JPG",
+        "position": "Professor & Head"
+    },
+    {
+        "department": "MATHS",
+        "code": "BPC",
+        "name": "Prof. B. P. Chamola",
+        "url": "http://www.jiit.ac.in/prof-bhagwati-prasad-chamola",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20BP%20Chamola.JPG",
+        "position": "Professor"
+    },
+    {
+        "department": "MATHS",
+        "code": "HA",
+        "name": "Dr. Himanshu Agarwal",
+        "url": "http://www.jiit.ac.in/dr-himanshu-agarwal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/Dr.-Himanshu-Agarwal.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "MATHS",
+        "code": "LK",
+        "name": "Dr. Lokendra Kumar",
+        "url": "http://www.jiit.ac.in/dr-lokendra-kumar-0",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/LokendraKumar.jpg",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "MATHS",
+        "code": "NS",
+        "name": "Dr. Neha Singhal",
+        "url": "http://www.jiit.ac.in/dr-neha-singhal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/pic.jpg",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "MATHS",
+        "code": "PAT",
+        "name": "Dr. Pato Kumari ",
+        "url": "http://www.jiit.ac.in/dr-pato-kumari",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20Pato%20Kumari.JPG",
+        "position": "Associate Professor"
+    },
+    {
+        "department": "MATHS",
+        "code": "PR",
+        "name": "Dr.  Puneet Rana",
+        "url": "http://www.jiit.ac.in/dr-puneet-rana",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20Puneet%20Rana.JPG",
+        "position": "Assistant Professor (Senior Grade)"
+    },
+    {
+        "department": "MATHS",
+        "code": "RCM",
+        "name": "Prof. R. C. Mittal",
+        "url": "http://www.jiit.ac.in/prof-ramesh-chand-mittal",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/rcm.jpg",
+        "position": "Professor"
+    },
+    {
+        "department": "MATHS",
+        "code": "SSH",
+        "name": "Prof. Sanjeev Sharma",
+        "url": "http://www.jiit.ac.in/prof-sanjeev-sharma",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/MA%20Sanjeev%20Sharma.JPG",
+        "position": "Professor and Associate Dean (SDAR)"
+    },
+    {
+        "department": "MATHS",
+        "code": "TN",
+        "name": "Dr. Trapti Neer",
+        "url": "http://www.jiit.ac.in/dr-trapti-neer",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/trapti%40JIIT1892.jpg",
+        "position": "Assistant Professor (Grade-I)"
+    },
+    {
+        "department": "MATHS",
+        "code": "YG",
+        "name": "Dr. Yogesh Gupta",
+        "url": "http://www.jiit.ac.in/dr-yogesh-gupta",
+        "imgUrl": "http://www.jiit.ac.in/sites/default/files/IMG_YG.jpg",
+        "position": "Assistant Professor (Senior Grade)"
+    }
+]

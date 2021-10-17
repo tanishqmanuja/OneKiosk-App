@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>OneKiosk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 *ngIf="keyboardHeight===0">Welcome User!</h2>
+  <p *ngIf="keyboardHeight===0">Enter your webkiosk credentials below.</p>
+
+  <div class="main-wrapper"
+    [style.padding-bottom]="keyboardHeight > 0 ? 'calc( ' + keyboardHeight + 'px' + ' + 2rem)' : '4rem'">
+
+    <form [formGroup]="webkioskForm">
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Enrollment Number</ion-label>
+        <ion-input formControlName="enroll" type="number"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Date of Birth</ion-label>
+        <ion-input formControlName="dob" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input formControlName="pass" type="password" enterkeyhint="go" (keyup.enter)="checkAuth()"></ion-input>
+      </ion-item>
+
+      <ion-button type="submit" fill="clear" (click)="checkAuth()">
+        {{checking ? 'Checking' : 'Login'}}
+      </ion-button>
+
+    </form>
+
+
+  </div>
+
+</ion-content>

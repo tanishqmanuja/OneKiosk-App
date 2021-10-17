@@ -1,0 +1,15 @@
+<ion-slides [options]="slideOpts" *ngIf="list && list.length" @list>
+  <ion-slide>
+    <ion-chip (click)="changeActive(-1)" [class.syncing]="syncing">
+      <ion-icon name="repeat-outline"></ion-icon>
+      <ion-label>SYNC</ion-label>
+    </ion-chip>
+  </ion-slide>
+
+  <ion-slide *ngFor="let sc of list; index as i">
+    <ion-chip (click)="changeActive(i)" [class.active]="i === selected">
+      <ion-label>{{sc}}</ion-label>
+    </ion-chip>
+  </ion-slide>
+
+</ion-slides>

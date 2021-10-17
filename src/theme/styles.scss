@@ -1,0 +1,74 @@
+:root {
+  --header-min-height: 8vh;
+  --statusbar-height: 24px;
+  --side-clearence: 0.9rem;
+  --top-clearence: calc(var(--statusbar-height) + var(--header-min-height));
+  --app-radius: 1.725rem;
+  --app-radius-large: 2.4rem;
+}
+
+* {
+  font-family: "Google Sans", sans;
+}
+
+ion-refresher-content {
+  .spinner-arrow-container > ion-spinner {
+    color: var(--you-a1-500) !important;
+  }
+  .refresher-refreshing-icon > ion-spinner {
+    color: var(--you-a1-500) !important;
+  }
+  ion-icon {
+    color: var(--you-a1-500) !important;
+  }
+}
+
+ion-refresher.refresher-native .refresher-pulling-icon,
+ion-refresher.refresher-native .refresher-refreshing-icon {
+  background: var(--ion-background-color);
+  border-color: var(--ion-background-color);
+}
+
+ion-header {
+  background-color: var(--ion-background-color);
+  padding-top: var(--statusbar-height);
+  ion-toolbar {
+    --min-height: var(--header-min-height);
+    ion-title {
+      font-size: 2rem;
+      font-weight: normal;
+    }
+  }
+}
+
+.popover-menu {
+  .popover-content {
+    border-radius: var(--app-radius);
+  }
+}
+
+.modal-tt-edit {
+  .modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 10%);
+  }
+}
+
+.modal-tt-import {
+  .modal-wrapper {
+    background-color: rgba(0, 0, 0, 10%);
+  }
+}
+
+ion-searchbar {
+  .searchbar-input-container {
+    input {
+      padding-block: 10px !important;
+    }
+    ion-icon {
+      top: 14px !important;
+    }
+  }
+}

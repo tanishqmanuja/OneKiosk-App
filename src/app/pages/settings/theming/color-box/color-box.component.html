@@ -1,0 +1,16 @@
+<div class="box" (click)="handleClick()">
+
+  <ng-container *ngIf="monetColors">
+    <div class="primary"></div>
+    <div class="secondary"></div>
+    <div class="tertiary"></div>
+  </ng-container>
+
+  <ng-container *ngIf="colors.length">
+    <div *ngFor="let color of colors;index as i" class="clr" [style.backgroundColor]="color"></div>
+  </ng-container>
+
+  <div *ngIf="!monetColors && !colors.length" class="primary dummy"></div>
+
+  <div *ngIf="selected" class="selected" @pop></div>
+</div>

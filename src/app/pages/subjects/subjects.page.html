@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Subjects</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-sem-select-bar [list]="list$ | async" (semChange)="changeSem($event)" [syncing]="syncing"></app-sem-select-bar>
+
+  <ion-refresher slot="fixed" pullFactor="0.1" pullMin="200" pullMax="300" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="(subjects$ | async) as data;else noData" [@list]="data">
+    <div *ngFor="let d of data">
+      <div class="card-wrapper">
+        <div class="subject-card">
+
+          <div class="main">
+            <div class="name-type">{{titleShortener(d.name,10)}} <span [class.elective]="d.type==='Elective'">{{d.type |
+                uppercase}}</span></div>
+            <div class="fullname-code">{{d.name}} ({{d.code}})</div>
+            <div class="faculty-wrapper" *ngIf="d.faculty">
+              <div class="label">Assigned faculty</div>
+              <div class="lec" *ngIf="d.faculty.lecture">
+                <div class="decor"></div>{{d.faculty.lecture | titlecase}} <span>(LEC)</span>
+              </div>
+              <div class="tut" *ngIf="d.faculty.tutorial">
+                <div class="decor"></div>{{d.faculty.tutorial | titlecase}} <span>(TUT)</span>
+              </div>
+              <div class="prac" *ngIf="d.faculty.practical">
+                <div class="decor"></div>{{d.faculty.practical | titlecase}} <span>(PRAC)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="creds" [class.elective]="d.type==='Elective'">{{d.credits}} Creds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noData>
+    <app-no-data-card (click)="fetchSemData()" [downloading]="downloading"></app-no-data-card>
+  </ng-template>
+
+</ion-content>

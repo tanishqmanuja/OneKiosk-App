@@ -1,0 +1,96 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-title>OneKiosk</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="header title">
+        <h4>Hello,</h4>
+        <h2>Mr. Stark</h2>
+        <div class="pill"></div>
+    </div>
+
+    <div class="bigtitle">Overview</div>
+
+    <div class="am-container" *ngIf="am$ |async as data">
+        <div class="title">Attendance and Marks</div>
+        <ion-slides [options]="slideOpts" @slide>
+            <ion-slide>
+                <div class="am-card">
+                    <div class="subject">Overall</div>
+                    <div class="bars">
+                        <div class="a-bar" *ngIf="totalAttendance$ | async as aPerc" [style.height.%]="aPerc">
+                            <div class="perc">
+                                {{aPerc|number:'0.0-0'}}<span>%</span></div>
+                            <div class="label">Attendance</div>
+                        </div>
+                        <div class="m-bar" *ngIf="totalMarks$ | async as mPerc" [style.height.%]="mPerc">
+                            <div class="perc">{{mPerc|number:'0.0-0'}}<span>%</span></div>
+                            <div class="label">Marks</div>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide *ngFor="let d of data;index as i">
+                <div class="am-card">
+                    <div class="subject">{{tShort(d.course.name,6)}}</div>
+                    <div class="bars">
+                        <div class="a-bar" [style.height.%]="mapAttendance(d.attendance)">
+                            <div class="perc">
+                                {{mapAttendance(d.attendance) || 0}}<span>%</span></div>
+                            <div class="label">Attendance</div>
+                        </div>
+                        <div class="m-bar" [style.height.%]="mapMarks(d.marks)">
+                            <div class="perc">{{mapMarks(d.marks) || 0}}<span>%</span></div>
+                            <div class="label">Marks</div>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </div>
+
+
+    <div class="classes-container" *ngIf="classes$ |async as data" @card>
+        <div class="bigtitle">Classes</div>
+
+        <div *ngIf="data.current" class="classes title">Ongoing</div>
+
+        <div *ngIf="data.current as t" class="class-card">
+            <div class="time">{{formatTime(t.time)}}</div>
+            <div class="main">
+                <div class="name">{{t.subject.acronym}}</div>
+                <div class="details">{{t.type | titlecase}} | {{t.teachers || 'NA'}}</div>
+                <div class="duration" [class.long]="t.duration!=='1'">{{t.duration}}h</div>
+            </div>
+        </div>
+
+        <ng-container *ngIf="data.upcoming?.length">
+            <div class="classes title">Upcoming</div>
+
+            <div *ngIf="data?.upcoming[0] as t" class="class-card">
+                <div class="time">{{formatTime(t.time)}}</div>
+                <div class="main">
+                    <div class="name">{{t.subject.acronym}}</div>
+                    <div class="details">{{t.type | titlecase}} | {{t.teachers}}</div>
+                    <div class="duration" [class.long]="t.duration!=='1'">{{t.duration}}h</div>
+                </div>
+            </div>
+
+            <div *ngIf="data?.upcoming[1] && !data.current" class="class-card">
+                <ng-container *ngIf="data.upcoming[1] as t">
+                    <div class="time">{{formatTime(t.time)}}</div>
+                    <div class="main">
+                        <div class="name">{{t.subject.acronym}}</div>
+                        <div class="details">{{t.type | titlecase}} | {{t.teachers}}</div>
+                        <div class="duration" [class.long]="t.duration!=='1'">{{t.duration}}h</div>
+                    </div>
+                </ng-container>
+            </div>
+        </ng-container>
+
+    </div>
+
+</ion-content>

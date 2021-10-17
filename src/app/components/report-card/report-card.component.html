@@ -1,0 +1,22 @@
+<div class="card" *ngIf="valid">
+  <div class="content">
+    <div class="grade" [class.low]="isGradeLow" *ngIf="data.grade">
+      <span>{{data.grade}}</span>
+    </div>
+    <div class="title">{{title}}</div>
+    <div class="marks-container">
+      <div class="marks" *ngFor="let m of data.marks | keyvalue">
+        <div class="exam">{{examName(m.key)}}</div>
+        <div class="bar-container">
+          <div class="bar" [style.width.%]="marksPercentage(m.key,m.value)"></div>
+        </div>
+        <div class="value">{{m.value}}<span>/{{maxMarks(m.key)}}</span></div>
+      </div>
+    </div>
+    <div class="bar-container total" *ngIf="totalPercentage(data.marks) as p">
+      <div class="bar" [style.width.%]="p">
+        <div class="dot" [style.width.%]="p"><span>{{p}}</span></div>
+      </div>
+    </div>
+  </div>
+</div>

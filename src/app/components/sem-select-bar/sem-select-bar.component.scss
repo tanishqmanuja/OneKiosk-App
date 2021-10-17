@@ -1,0 +1,54 @@
+:host {
+  --bar-height: 6vh;
+  --chip-bg: var(--ion-card-background-color);
+  --chip-color: var(--you-a2-500);
+  --chip-bg-active: var(--you-a1-500);
+  --chip-color-active: var(--ion-background-color);
+}
+
+:host-context(.dark) {
+  --chip-color: var(--you-a2-50);
+  --chip-bg-active: var(--you-a1-400);
+}
+
+ion-slides {
+  height: var(--bar-height);
+  background-color: var(--ion-background-color);
+}
+
+ion-chip {
+  --color: var(--chip-color);
+  --background: var(--chip-bg);
+  border-radius: var(--app-radius);
+  transition: background 250ms ease-out, color 350ms ease-out;
+  font-size: clamp(9.8px, 1rem, 3.1vw);
+  ion-icon {
+    color: inherit;
+  }
+}
+
+ion-chip.active {
+  --color: var(--chip-color-active);
+  --background: var(--chip-bg-active);
+  transition: background 250ms ease-in, color 350ms ease-in;
+}
+
+ion-slide > ion-chip:first-child {
+  width: 100%;
+  justify-content: center;
+}
+
+.syncing {
+  animation: pulse 400ms ease infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: var(--chip-bg);
+    color: var(--chip-color);
+  }
+  100% {
+    background-color: var(--chip-bg-active);
+    color: var(--chip-color-active);
+  }
+}

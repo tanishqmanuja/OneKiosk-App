@@ -1,0 +1,45 @@
+:host {
+  --clr-bg-btn: var(--you-a3-500);
+}
+
+:host-context(.dark) {
+  --clr-bg-btn: var(--you-a3-600);
+}
+
+.boxes-container {
+  padding-block: 1rem 2.5rem;
+  padding-inline: var(--side-clearence);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+
+  &.mode {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+ion-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 3rem;
+  color: var(--you-n1-50);
+  --padding-top: 1.6rem;
+  --padding-bottom: 1.6rem;
+  --padding-start: 1.6rem;
+  --padding-end: 1.6rem;
+  --background: var(--clr-bg-btn);
+  --border-radius: var(--app-radius-large);
+}
+
+ion-item {
+  --transition: none;
+  ion-label {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}

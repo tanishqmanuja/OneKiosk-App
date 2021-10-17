@@ -1,0 +1,12 @@
+<div class="card" @flyIn>
+  <div class="content">
+    <div class="details">
+      <div class="text">No Data Available</div>
+      <div class="subtext">Click to Fetch Now</div>
+    </div>
+    <div class="icon">
+      <ion-icon *ngIf="!downloading" name="cloud-download-outline"></ion-icon>
+      <ion-icon *ngIf="downloading" name="sync-outline"></ion-icon>
+    </div>
+  </div>
+</div>

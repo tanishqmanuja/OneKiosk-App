@@ -1,0 +1,37 @@
+<div class="card-wrapper" *ngIf="holiday; else main">
+  <div class="card">
+    <div class="time">
+      <ion-icon name="ice-cream-outline"></ion-icon>
+    </div>
+    <div class="main">
+      <div class="name">Enjoy</div>
+      <div class="details">No Class Today!</div>
+    </div>
+  </div>
+</div>
+
+<ng-template #main>
+  <div class="card-wrapper">
+    <div class="options" #options>
+
+      <div class="square" (click)="optionPressed.emit('edit')">
+        <ion-icon name="pencil"></ion-icon>
+      </div>
+
+      <div class="square delete" (click)="optionPressed.emit('delete')">
+        <ion-icon name="trash"></ion-icon>
+      </div>
+
+    </div>
+
+    <div class="card" #card>
+      <div class="time">{{formatTime(data.time)}}</div>
+
+      <div class="main">
+        <div class="name">{{data.subject.acronym}}</div>
+        <div class="details">{{data.type | titlecase}} | {{data.teachers || 'NA'}}</div>
+        <div class="duration" [class.long]="data.duration!=='1'">{{data.duration}}h</div>
+      </div>
+    </div>
+  </div>
+</ng-template>

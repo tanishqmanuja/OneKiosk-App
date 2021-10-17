@@ -1,27 +1,54 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+:host {
+  --fs-label: clamp(0.5rem, 2.1vw, 0.68rem);
+  --clr-normal: var(--you-a1-400);
+  --clr-active: var(--ion-background-color);
+  --clr-active-bg: var(--you-a1-500);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+:host-context(.dark) {
+  --clr-normal: var(--you-a1-600);
+  --clr-active: var(--ion-background-color);
+  --clr-active-bg: var(--you-a1-300);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+ion-tab-bar {
+  padding: 0.2rem 0rem;
+  --border: none;
 
-  color: #8c8c8c;
+  ion-tab-button {
+    padding: 0;
+    --padding-end: 0;
+    --padding-start: 0;
+    --ripple-color: transparent;
 
-  margin: 0;
-}
+    ion-icon {
+      margin-top: var(--fs-label);
+      font-size: 1.2rem;
+      padding-block: 0.38rem;
+      padding-inline: 1.35rem;
+      color: var(--clr-normal);
+      background-color: transparent;
+      border-radius: var(--app-radius);
+      transition: color 450ms ease-in-out, background 300ms ease-in-out;
+    }
 
-#container a {
-  text-decoration: none;
+    ion-label {
+      font-size: var(--fs-label);
+      font-weight: bolder;
+      color: transparent;
+      margin-bottom: 0;
+      transition: color 300ms ease-in-out;
+    }
+
+    &[aria-selected="true"] {
+      ion-icon {
+        color: var(--clr-active);
+        background-color: var(--clr-active-bg);
+      }
+
+      ion-label {
+        color: var(--clr-active-bg);
+      }
+    }
+  }
 }

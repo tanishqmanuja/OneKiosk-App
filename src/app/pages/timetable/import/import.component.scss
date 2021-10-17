@@ -1,0 +1,70 @@
+:host {
+  --clr-a1: var(--you-a1-600);
+  --ion-background-color: var(--ion-card-background-color);
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-400);
+}
+
+ion-content {
+  position: absolute;
+  top: 20vh;
+  height: 80vh;
+  width: 100vw;
+  border-top-left-radius: var(--app-radius-large);
+  border-top-right-radius: var(--app-radius-large);
+  overflow: hidden;
+}
+
+.header {
+  position: sticky;
+  z-index: 1;
+  background-color: var(--ion-background-color);
+  top: 0;
+  padding-inline: 20px;
+  padding-bottom: 16px;
+  border-top-left-radius: var(--app-radius-large);
+  border-top-right-radius: var(--app-radius-large);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    padding-block: 10px;
+  }
+
+  .title {
+    align-self: flex-start;
+  }
+}
+ion-list {
+  min-height: calc(80vh - 42px - 105px);
+  padding-inline: var(--side-clearence);
+  padding-bottom: 50px;
+  padding-top: 0;
+  ion-icon {
+    color: var(--clr-a1);
+  }
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  padding-top: var(--side-clearence);
+  padding-bottom: var(--side-clearence);
+  padding-inline: var(--side-clearence);
+  width: 100%;
+  border-top-left-radius: var(--app-radius-large);
+  border-top-right-radius: var(--app-radius-large);
+  background-color: var(--ion-background-color);
+  ion-button {
+    --border-radius: var(--app-radius);
+    font-size: 0.85rem;
+    color: var(--ion-background-color);
+    --background: var(--clr-a1);
+    --box-shadow: none;
+  }
+}

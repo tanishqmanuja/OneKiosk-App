@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="settings"></ion-back-button>
+    </ion-buttons>
+    <ion-title>WebKiosk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="webkioskForm">
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Enrollment Number</ion-label>
+      <ion-input formControlName="enroll" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Date of Birth</ion-label>
+      <ion-input formControlName="dob" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input formControlName="pass" type="password"></ion-input>
+    </ion-item>
+
+  </form>
+
+  <ion-button *ngIf="this.webkioskForm.valid && (isCheckNeeded | async)"
+    (click)="isAuthCorrect ? saveAuth() : checkAuth()" fill="clear" @pop>
+    {{ checking ? 'Wait' : (isAuthCorrect ? 'Save' : 'Check')}}
+  </ion-button>
+
+</ion-content>

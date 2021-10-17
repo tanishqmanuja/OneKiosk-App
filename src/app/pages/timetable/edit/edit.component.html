@@ -1,0 +1,85 @@
+<div class="card">
+
+  <form [formGroup]="form">
+
+    <div class="name-container">
+      <ion-list-header>
+        <ion-label>Short Name</ion-label>
+      </ion-list-header>
+      <ion-input formControlName="name" type="text"></ion-input>
+    </div>
+
+    <div class="types-container">
+      <ion-radio-group name="type" #typesGroup formControlName="type">
+        <ion-list-header>
+          <ion-label>Type</ion-label>
+        </ion-list-header>
+
+        <div class="types">
+          <div class="type" *ngFor="let t of types">
+            <div class="label" [class.active]="typesGroup.value===t">{{t|slice:0:1|uppercase}}</div>
+            <ion-radio [value]="t"></ion-radio>
+          </div>
+        </div>
+      </ion-radio-group>
+    </div>
+
+    <div class="dt-wrapper">
+      <div class="days-container">
+        <ion-list-header>
+          <ion-label>Day</ion-label>
+        </ion-list-header>
+
+        <ion-radio-group name="day" #daysGroup formControlName="day">
+          <div class="days">
+            <div class="day" *ngFor="let day of days">
+              <div class="label" [class.active]="daysGroup.value===day">{{day|slice:0:1|uppercase}}</div>
+              <ion-radio [value]="day"></ion-radio>
+            </div>
+          </div>
+        </ion-radio-group>
+      </div>
+
+      <div class="time-container">
+        <ion-list-header>
+          <ion-label>Time</ion-label>
+        </ion-list-header>
+
+        <div class="time-selector">
+          <div class="selected">{{formatTime(selectedTime)[0]}} <span>{{formatTime(selectedTime)[1]}}</span></div>
+          <div class="time-btns">
+            <ion-button (click)="increment()">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+
+            <ion-button (click)="decrement()">
+              <ion-icon slot="icon-only" name="remove"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="duration-container">
+      <ion-list-header>
+        <ion-label>Duration</ion-label>
+      </ion-list-header>
+
+      <ion-range min="1" max="3" step="1" snaps="true" pin="true" formControlName="duration">
+        <ion-icon size="small" slot="start" name="alarm-outline"></ion-icon>
+        <ion-icon size="small" slot="end" name="speedometer-outline"></ion-icon>
+      </ion-range>
+    </div>
+  </form>
+
+  <div class="btns">
+    <ion-button (click)="cancel()">
+      Cancel
+    </ion-button>
+    <ion-button (click)="save()">
+      Save
+    </ion-button>
+  </div>
+</div>

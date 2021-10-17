@@ -1,0 +1,17 @@
+<div class="card" *ngIf="valid">
+  <div class="content">
+    <div class="details">
+      <div class="name">{{title}}</div>
+      <div class="bar">
+        <div class="dot" *ngFor="let val of dots" [style.backgroundColor]="dotColor(val)"></div>
+        <div class="pill" [style.backgroundColor]="pillColor(total)" [style.width.%]="total*0.6"></div>
+      </div>
+      <div class="others">
+        <div class="lec" *ngIf="data.attendance.lecture">Lec: {{data.attendance.lecture|number}}%</div>
+        <div class="tut" *ngIf="data.attendance.tutorial">Tut: {{data.attendance.tutorial|number}}%</div>
+        <div class="prac" *ngIf="data.attendance.practical">Prac: {{data.attendance.practical|number}}%</div>
+      </div>
+    </div>
+    <div class="percentage">{{ total }}<span>%</span></div>
+  </div>
+</div>

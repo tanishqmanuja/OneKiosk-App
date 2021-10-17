@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-title>Timetable</ion-title>
+        <ion-icon name="ellipsis-vertical" slot="end" (click)="openMenu($event)">
+        </ion-icon>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div class="day-selector" @daySelector>
+
+        <div class="click-fixer-prev" (click)="changeSelected(false)">
+            <div class="prev">
+                <ion-icon name="caret-back-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="selected">{{selectedDay | titlecase}}</div>
+
+        <div class="click-fixer-next" (click)="changeSelected(true)">
+            <div class="next">
+                <ion-icon name="caret-forward-outline"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+
+    <div *ngIf="timetable$ | async as tt" [@cardsAnimation]="tt">
+
+        <app-timetable-card *ngFor="let t of tt" [data]="t" (optionPressed)="handleOptionPressed($event,t)">
+        </app-timetable-card>
+
+        <app-timetable-card *ngIf="tt.length === 0" [holiday]="true"></app-timetable-card>
+    </div>
+
+</ion-content>

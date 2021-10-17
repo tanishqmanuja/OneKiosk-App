@@ -1,0 +1,68 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Database</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h3>Attendance</h3>
+
+  <ng-container *ngIf="aList$ | async as aList;else noDataA">
+    <div class="cards-container">
+      <div class="card" *ngFor="let item of aList">
+        <div class="name">{{item}}</div>
+        <div class="status" #status [class.negative]="(aIsAvailableForSem$(item) | async) !== true"
+          (click)="updateAttendance(item,status)">
+          <ion-icon [name]="getIcon(status)"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noDataA>
+    <app-no-data-card (click)="fetchAList()" [downloading]="downloadingA"></app-no-data-card>
+  </ng-template>
+
+  <h3>Reports</h3>
+
+  <ng-container *ngIf="mList$ | async as mList;else noDataB">
+    <div class="cards-container">
+      <div class="card" *ngFor="let item of mList">
+        <div class="name">{{item}}</div>
+        <div class="status" #status [class.negative]="(rIsAvailableForSem$(item) | async) !== true"
+          (click)="updateReports(item,status)">
+          <ion-icon [name]="getIcon(status)"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noDataB>
+    <app-no-data-card (click)="fetchMList()" [downloading]="downloadingB"></app-no-data-card>
+  </ng-template>
+
+  <h3>Subjects</h3>
+
+  <ng-container *ngIf="sList$ | async as sList;else noDataC">
+    <div class="cards-container">
+      <div class="card" *ngFor="let item of sList">
+        <div class="name">{{item}}</div>
+        <div class="status" #status [class.negative]="(sIsAvailableForSem$(item) | async) !== true"
+          (click)="updateSubjects(item,status)">
+          <ion-icon [name]="getIcon(status)"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noDataC>
+    <app-no-data-card (click)="fetchSList()" [downloading]="downloadingC"></app-no-data-card>
+  </ng-template>
+
+  <div class="end-padding"></div>
+
+</ion-content>

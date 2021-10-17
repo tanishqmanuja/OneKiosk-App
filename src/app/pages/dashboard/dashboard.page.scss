@@ -1,0 +1,195 @@
+:host {
+  --am-card-size: 12.5rem;
+  --class-card-height: clamp(5.7rem, 28vw, 6.75rem);
+  --side-margin: 2.4rem;
+  --clr-a1: var(--you-a1-600);
+  --clr-a1-light: var(--you-a1-200);
+  --clr-a1-lightest: var(--you-a1-100);
+  --clr-a2: var(--you-a3-600);
+  --clr-a2-light: var(--you-a3-200);
+  --clr-a2-lightest: var(--you-a3-100);
+  --clr-sec-text: var(--you-n1-600);
+}
+
+:host-context(.dark) {
+  --clr-a1: var(--you-a1-600);
+  --clr-a1-light: var(--you-a1-400);
+  --clr-a1-lightest: var(--you-a1-300);
+  --clr-a2: var(--you-a3-600);
+  --clr-a2-light: var(--you-a3-400);
+  --clr-a2-lightest: var(--you-a3-300);
+  --clr-sec-text: var(--you-n1-300);
+}
+
+.title {
+  margin-inline: var(--side-margin);
+}
+
+.header {
+  h2,
+  h4 {
+    font-weight: normal;
+    margin-block: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+  }
+
+  h4 {
+    font-size: 1.65rem;
+    margin-top: 0.4rem;
+  }
+
+  .pill {
+    position: relative;
+    margin-block: 0.54rem 2rem;
+    border-radius: var(--app-radius-large);
+    height: 0.7rem;
+    width: 50%;
+    background-color: var(--clr-a1-lightest);
+  }
+}
+
+.bigtitle {
+  font-size: 1.8rem;
+  margin-inline: var(--side-margin);
+}
+
+.am-container {
+  margin-bottom: 1.4rem;
+  .title {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .am-card {
+    --padding: 0.6rem;
+    height: var(--am-card-size);
+    width: var(--am-card-size);
+    padding: var(--padding);
+    border-radius: var(--app-radius);
+    background-color: var(--ion-card-background-color);
+    display: flex;
+    flex-direction: column;
+    .subject {
+      font-size: 1.4rem;
+      text-align: left;
+      padding: var(--padding);
+      width: 100%;
+    }
+    .bars {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 3px;
+      border-bottom-left-radius: calc(var(--app-radius) - var(--padding) / 2);
+      border-bottom-right-radius: calc(var(--app-radius) - var(--padding) / 2);
+      overflow: hidden;
+
+      .a-bar,
+      .m-bar {
+        width: 100%;
+        height: 0%;
+        min-height: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        transition: height 300ms ease-in-out;
+        .perc {
+          font-size: clamp(1.2rem, 6vw, 1.8rem);
+          span {
+            font-size: 0.5em;
+          }
+        }
+        .label {
+          margin-bottom: calc(var(--app-radius) / 2);
+          font-size: clamp(0.6rem, 3.3vw, 0.75rem);
+        }
+      }
+
+      .a-bar {
+        color: var(--clr-a1);
+        background-color: var(--clr-a1-lightest);
+      }
+      .m-bar {
+        color: var(--clr-a2);
+        background-color: var(--clr-a2-lightest);
+      }
+    }
+  }
+}
+
+.classes-container {
+  .title {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .class-card {
+    height: var(--class-card-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+    margin-inline: var(--side-margin);
+    gap: calc(var(--side-clearence) * 0.9);
+    .time {
+      height: var(--class-card-height);
+      min-width: var(--class-card-height);
+      background-color: var(--clr-a1-lightest);
+      border-radius: var(--app-radius);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--clr-a1);
+      font-size: clamp(1.45rem, 6.8vw, 1.5rem);
+      ion-icon {
+        font-size: 2rem;
+      }
+    }
+    .main {
+      position: relative;
+      width: 100%;
+      height: var(--class-card-height);
+      border-radius: var(--app-radius-large);
+      background-color: var(--ion-card-background-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: calc(var(--app-radius-large) * 0.6);
+      .name {
+        font-size: clamp(1.2rem, 6vw, 1.6rem);
+      }
+      .details {
+        font-size: clamp(0.8rem, 4.3vw, 1.3rem);
+        color: var(--clr-sec-text);
+      }
+    }
+    .duration {
+      position: absolute;
+      top: calc(var(--app-radius-large) * 0.3);
+      right: calc(var(--app-radius-large) * 0.3);
+      width: 4ch;
+      height: 4ch;
+      border-radius: 50%;
+      background-color: var(--clr-a1-lightest);
+      display: grid;
+      align-content: center;
+      text-align: center;
+      font-size: clamp(0.6rem, 3.3vw, 0.8rem);
+      color: var(--clr-a1);
+      font-weight: bolder;
+      &.long {
+        background-color: var(--clr-a2-lightest);
+        color: var(--clr-a2);
+      }
+    }
+  }
+}

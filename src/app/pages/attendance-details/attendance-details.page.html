@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container *ngIf="data$|async as data">
+
+    <div class="stats">
+      <div class="stats-card">
+        <div class="one">
+
+          <div class="title mn">Missing Next</div>
+          <div class="title an">Attending Next</div>
+
+          <div class="box mn">
+            <div>{{missingNext(data.details)}}%</div>
+            <div class="mn-value">
+              {{total(data) - missingNext(data.details)}}<span>%</span>
+            </div>
+          </div>
+
+          <div class="box an">
+            <div class="an-value">
+              {{total(data) - attendingNext(data.details)}}<span>%</span>
+            </div>
+            <div>{{attendingNext(data.details)}}%</div>
+          </div>
+
+          <span class="sign mn">&#8595;</span>
+          <span class="sign an"> &#8593;</span>
+        </div>
+        <div class="three">
+          <div class="lec" *ngIf="data.attendance.lecture">Lec: {{data.attendance.lecture | number}}%</div>
+          <div class="total" *ngIf="data.attendance.total">Total: {{data.attendance.total | number}}%</div>
+          <div class="tut" *ngIf="data.attendance.tutorial">Tut: {{data.attendance.tutorial | number}}%</div>
+          <div class="prac" *ngIf="data.attendance.practical">Prac: {{data.attendance.practical | number}}%</div>
+        </div>
+        <div class="four">
+          <div class="bar" [style.width.%]="total(data)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="title-wrapper">
+        <div class="title">Details</div>
+        <div class="title-cover"></div>
+      </div>
+      <div class="details-card">
+        <div class="detail" *ngFor="let detail of filteredList$ | async">
+          <div class="dot" [class.absent]="detail.status==='Absent'"></div>
+          <div class="ltp">{{detail.ltp | slice:0:3}}</div>
+          <div class="time">{{detail.date | slice:11:13 | number}}{{detail.date | slice:17:19}}</div>
+          <div class="date">{{detail.date | slice:0:8}}</div>
+          <div class="teacher">{{detail.teacher | slice:0:12 | titlecase}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pill-cover"></div>
+
+    <div class="list-cover left"></div>
+    <div class="list-cover right"></div>
+
+    <div class="selection-pill">
+      <app-selection-pill [options]="ltp$ | async" (selectionChanged)="selected$.next($event)"></app-selection-pill>
+    </div>
+
+  </ng-container>
+</ion-content>

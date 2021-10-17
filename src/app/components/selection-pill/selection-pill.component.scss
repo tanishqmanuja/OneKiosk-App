@@ -1,0 +1,38 @@
+:host {
+  --clr-bg: var(--ion-card-background-color);
+  --clr-selected: var(--you-a1-600);
+  --padding: 1rem;
+}
+
+.pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--app-radius-large);
+  background-color: var(--clr-bg);
+  .item {
+    font-size: var(--fs-500);
+    font-weight: bold;
+    color: var(--clr-selected);
+    z-index: 2;
+    width: 100%;
+    padding: var(--padding);
+    text-align: center;
+    transition: color 300ms ease-in-out;
+    &.selected {
+      color: var(--clr-bg);
+    }
+  }
+  .selector {
+    font-size: var(--fs-500);
+    position: absolute;
+    z-index: 1;
+    border-radius: var(--app-radius-large);
+    padding: var(--padding);
+    background-color: var(--clr-selected);
+    color: var(--clr-selected);
+    width: 100%;
+    transition: left 300ms ease-in-out;
+  }
+}

@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="settings"></ion-back-button>
+    </ion-buttons>
+    <ion-title>OneKiosk APIs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item lines="none">
+    <ion-label>Enable custom endpoints</ion-label>
+    <ion-toggle class="a12" slot="end" [(ngModel)]="customEndpoints"></ion-toggle>
+  </ion-item>
+
+  <form [formGroup]="apiForm">
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Primary endpoint</ion-label>
+      <ion-input formControlName="primary" type="url"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Secondary endpoint</ion-label>
+      <ion-input formControlName="secondary" type="url"></ion-input>
+    </ion-item>
+
+  </form>
+
+  <ion-button *ngIf="this.apiForm.valid && (isSaveNeeded | async)" fill="clear" @pop (click)="save()">
+    Save
+  </ion-button>
+
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-title>Attendance</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <app-sem-select-bar [list]="list$ | async" (semChange)="changeSem($event)" [syncing]="syncing"></app-sem-select-bar>
+
+    <ion-refresher slot="fixed" pullFactor="0.1" pullMin="200" pullMax="300" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <div *ngIf="attendance$ | async as data;else noData" [@cardsAnimation]="data">
+        <app-attendance-card *ngFor="let d of data" [data]="d"
+            [routerLink]="['/attendance-details',semcode,d.course.code]">
+        </app-attendance-card>
+    </div>
+
+    <div *ngIf="updatedOn as u" class="updated-on">Updated on {{ u | date:'medium' }}</div>
+
+    <ng-template #noData>
+        <app-no-data-card (click)="fetchSemData()" [downloading]="downloading"></app-no-data-card>
+    </ng-template>
+
+</ion-content>

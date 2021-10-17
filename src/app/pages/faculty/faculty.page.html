@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Teachers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScroll)="manageScroll($event)">
+  <ion-searchbar #searchBar placeholder="Search teacher" [debounce]="250"></ion-searchbar>
+
+  <div *ngIf="filteredFaculty$ | async as faculty" [@cardsAnimation]="faculty">
+    <div class="card" *ngFor="let f of faculty">
+      <div class="pic" [style.backgroundImage]="'url(' + defaultImage + ')'" [lazyLoad]="f.imgUrl">
+      </div>
+      <div class="main">
+        <div class="code">{{f.code}}</div>
+        <div class="name">{{f.name}}</div>
+        <div class="dept">{{f.department}}</div>
+        <div class="pos">{{f.position}}</div>
+      </div>
+    </div>
+
+    <ion-button *ngIf="isScrollTopNeeded" (click)="scrollTop()" fill="clear" @pop>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

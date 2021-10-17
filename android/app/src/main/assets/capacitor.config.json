@@ -1,0 +1,7 @@
+{
+	"appId": "io.starkinc.onekiosk",
+	"appName": "OneKiosk",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"backgroundColor": "#00000000"
+}
