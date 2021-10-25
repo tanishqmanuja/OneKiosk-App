@@ -49,10 +49,10 @@ export class ReportPage implements OnInit {
       this.reportService.getPoints(),
     ]).pipe(
       map(([list, selected, points]) => {
-        const selectedSem =
-          list.length - selected - (list.length - points.length);
-        return points.find(
-          (point) => parseInt(point.semester, 10) === selectedSem
+        const delta = list.length - points.length;
+        const selectedSem = points.length + delta - selected;
+        return [...points, ...Array(delta)].find(
+          (point) => parseInt(point?.semester, 10) === selectedSem
         );
       })
     );
