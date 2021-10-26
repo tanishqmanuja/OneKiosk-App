@@ -9,6 +9,7 @@ import { AttendancePageRoutingModule } from './attendance-routing.module';
 import { AttendancePage } from './attendance.page';
 import { AttendanceCardComponent } from 'src/app/components/attendance-card/attendance-card.component';
 import { SharedComponentsModule } from 'src/app/components/shared-components.module';
+import { HeaderColorDirectiveModule } from 'src/app/directives/header-color/header-color-directive.module';
 
 @NgModule({
   imports: [
@@ -16,8 +17,9 @@ import { SharedComponentsModule } from 'src/app/components/shared-components.mod
     FormsModule,
     IonicModule,
     AttendancePageRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    HeaderColorDirectiveModule,
   ],
-  declarations: [AttendancePage,AttendanceCardComponent]
+  declarations: [AttendancePage, AttendanceCardComponent],
 })
 export class AttendancePageModule {}

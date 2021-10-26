@@ -8,6 +8,7 @@ import { FacultyPageRoutingModule } from './faculty-routing.module';
 
 import { FacultyPage } from './faculty.page';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { HeaderColorDirectiveModule } from 'src/app/directives/header-color/header-color-directive.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     IonicModule,
     FacultyPageRoutingModule,
     LazyLoadImageModule,
+    HeaderColorDirectiveModule,
   ],
   declarations: [FacultyPage],
 })

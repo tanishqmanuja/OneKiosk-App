@@ -30,15 +30,22 @@ ion-refresher.refresher-native .refresher-refreshing-icon {
 }
 
 ion-header {
-  background-color: var(--ion-background-color);
+  --bg: var(--ion-background-color);
+  background-color: var(--bg);
   padding-top: var(--statusbar-height);
   ion-toolbar {
+    --background: var(--bg);
     --min-height: var(--header-min-height);
     ion-title {
-      font-size: 2rem;
+      font-size: var(--fs-700);
       font-weight: normal;
     }
   }
+}
+
+ion-header.color {
+  box-shadow: 0 0 3px rgb(0 0 0 / 6%);
+  --bg: var(--ion-header-background-color);
 }
 
 .popover-menu {

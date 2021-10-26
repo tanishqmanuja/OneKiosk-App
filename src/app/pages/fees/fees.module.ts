@@ -8,6 +8,7 @@ import { FeesPageRoutingModule } from './fees-routing.module';
 
 import { FeesPage } from './fees.page';
 import { SharedComponentsModule } from 'src/app/components/shared-components.module';
+import { HeaderColorDirectiveModule } from 'src/app/directives/header-color/header-color-directive.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { SharedComponentsModule } from 'src/app/components/shared-components.mod
     IonicModule,
     FeesPageRoutingModule,
     SharedComponentsModule,
+    HeaderColorDirectiveModule,
   ],
   declarations: [FeesPage],
 })

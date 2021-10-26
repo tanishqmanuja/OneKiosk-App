@@ -1,4 +1,7 @@
+<div class="spacer"></div>
+
 <ion-slides [options]="slideOpts" *ngIf="list && list.length" @list>
+
   <ion-slide>
     <ion-chip (click)="changeActive(-1)" [class.syncing]="syncing">
       <ion-icon name="repeat-outline"></ion-icon>

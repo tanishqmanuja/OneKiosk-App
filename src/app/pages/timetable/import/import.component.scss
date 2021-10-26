@@ -22,19 +22,15 @@ ion-content {
   z-index: 1;
   background-color: var(--ion-background-color);
   top: 0;
-  padding-inline: 20px;
-  padding-bottom: 16px;
+  padding-inline: calc(var(--app-radius-large) * 0.75);
+  padding-block: calc(var(--app-radius-large) * 0.75) 16px;
   border-top-left-radius: var(--app-radius-large);
   border-top-right-radius: var(--app-radius-large);
-  font-size: 1rem;
+  font-size: var(--fs-550);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  ion-icon {
-    padding-block: 10px;
-  }
 
   .title {
     align-self: flex-start;
@@ -61,6 +57,7 @@ ion-list {
   border-top-right-radius: var(--app-radius-large);
   background-color: var(--ion-background-color);
   ion-button {
+    height: 2.5rem;
     --border-radius: var(--app-radius);
     font-size: 0.85rem;
     color: var(--ion-background-color);
