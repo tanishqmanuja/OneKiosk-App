@@ -42,7 +42,11 @@ export interface CurrentClasses {
 })
 export class TimetableService {
   private timetable = new BehaviorSubject<TimetableData>([]);
-  private classesTimer = new BehaviorSubject(0.2);
+  private classesTimer = new BehaviorSubject(1 / 60);
+  private currentClasses = new BehaviorSubject<CurrentClasses>({
+    current: undefined,
+    upcoming: undefined,
+  });
 
   constructor(private storage: StorageService) {
     this.loadTimetable();
@@ -79,15 +83,26 @@ export class TimetableService {
         upcoming: undefined,
       };
 
-      const currTimeIsLessThan = (h: number) => hr < h;
-      const currTimeIsGreatorThan = (h: number) => hr > h;
-      const currTimeIsBetween = (h1: number, h2: number) =>
-        hr >= h1 && hr < h2 && (hr === h2 - 1 ? min <= 50 : true);
+      const currTimeIsLessThan = (h: number, m: number = 0) =>
+        hr < h || (hr === h && min < m);
+      const currTimeIsGreatorThan = (h: number, m: number = 0) =>
+        hr > h || (hr === h && min > m);
+      const currTimeIsBetween = (
+        hmin: number,
+        mmin: number = 0,
+        hmax: number,
+        mmax: number = 0
+      ) => currTimeIsGreatorThan(hmin, mmin) && currTimeIsLessThan(hmax, mmax);
 
-      if (currTimeIsGreatorThan(17)) return cc;
+      if (currTimeIsGreatorThan(16, 50)) return cc;
 
       const foundIndex = classes.findIndex((item) =>
-        currTimeIsBetween(item.time, item.time + parseInt(item.duration, 10))
+        currTimeIsBetween(
+          item.time,
+          0,
+          item.time + parseInt(item.duration, 10) - 1,
+          50
+        )
       );
       if (foundIndex > 0) {
         cc.current = classes[foundIndex];
@@ -107,22 +122,28 @@ export class TimetableService {
       const hr = date.getHours();
       const min = date.getMinutes();
 
-      const currTimeIsGreatorThan = (h: number) => hr > h;
+      const currTimeIsLessThan = (h: number, m: number = 0) =>
+        hr < h || (hr === h && min < m);
+      const currTimeIsGreatorThan = (h: number, m: number = 0) =>
+        hr > h || (hr === h && min > m);
+      const currTimeIsBetween = (
+        hmin: number,
+        mmin: number = 0,
+        hmax: number,
+        mmax: number = 0
+      ) => currTimeIsGreatorThan(hmin, mmin) && currTimeIsLessThan(hmax, mmax);
 
-      if (currTimeIsGreatorThan(15)) return (24 - hr + 8) * 60 + 50;
-      else if (currTimeIsGreatorThan(8)) return min >= 50 ? 60 - min : 50 - min;
-      return (8 - hr) * 60 + 50;
+      if (currTimeIsGreatorThan(16, 50)) return (24 - hr + 8) * 60;
+      else if (currTimeIsLessThan(8)) return (8 - hr) * 60 + 60 - min;
+      return 60 - min;
     };
 
     return this.classesTimer.pipe(
       switchMap((time) => interval(time * 60 * 1000)),
       throttleTime(500),
       map(() => calcCurrentClasses()),
-      tap((val) => {
-        const delay = calcDelayTime();
-        // console.log('classes', val);
-        // console.log('delay', Math.floor(delay / 60), delay % 60);
-        this.classesTimer.next(delay);
+      tap(() => {
+        this.classesTimer.next(calcDelayTime());
       }),
       filter((c) => c?.current !== undefined || c?.upcoming !== undefined)
     );
