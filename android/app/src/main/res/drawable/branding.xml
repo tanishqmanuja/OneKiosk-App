@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:height="100dp"
+    android:width="200dp"
+    android:gravity="center">
+    <shape android:shape="rectangle">
+      <solid android:color="@android:color/transparent"/>
+    </shape>
+  </item>
+
+  <item
+    android:height="24.683dp"
+    android:width="152.03dp"
+    android:drawable="@drawable/branding_text"
+    android:gravity="bottom|center">
+  </item>
+</layer-list>
