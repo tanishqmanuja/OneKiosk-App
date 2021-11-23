@@ -104,7 +104,8 @@ export class TimetableService {
           50
         )
       );
-      if (foundIndex > 0) {
+
+      if (foundIndex > -1) {
         cc.current = classes[foundIndex];
         cc.upcoming = classes.splice(foundIndex + 1);
       } else {
