@@ -107,7 +107,7 @@ export class TimetableService {
 
       if (foundIndex > -1) {
         cc.current = classes[foundIndex];
-        cc.upcoming = classes.splice(foundIndex + 1);
+        cc.upcoming = classes.slice(foundIndex + 1);
       } else {
         cc.upcoming = classes.filter((item) => currTimeIsLessThan(item.time));
       }
