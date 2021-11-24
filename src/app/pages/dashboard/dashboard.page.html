@@ -53,7 +53,7 @@
     </div>
 
 
-    <div class="classes-container" *ngIf="classes$ |async as data" @card>
+    <div class="classes-container" *ngIf="classes$ |async as data" @classes>
         <div class="bigtitle">Classes</div>
 
         <div *ngIf="data.current" class="classes title">Ongoing</div>
